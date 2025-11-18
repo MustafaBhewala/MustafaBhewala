@@ -1,11 +1,3 @@
-<!-- MODERN, PROFESSIONAL, PORTFOLIO‑GRADE README BASED ON YOUR REAL RESUME -->
-
-<!-- ============================= -->
-
-<!--        HEADER SECTION         -->
-
-<!-- ============================= -->
-
 <div align="center" style="padding: 32px 20px; max-width: 900px; margin: auto; border-radius: 18px; background: rgba(255,255,255,0.04); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.08);">
   <h1 style="font-weight:700; letter-spacing:-1px; margin-bottom: 0;">Mustafa Bhewala</h1>
   <p style="color: #cfcfcf; margin-top: 6px; font-size: 15px;">Full-Stack Developer — JavaScript | React | Node.js | Automation | AI</p>
@@ -54,7 +46,7 @@ JavaScript • TypeScript • Python • Dart • C/C++ <br/> <img src="https://
 
 ---
 
-# Project Showcase (Real Resume-Based)
+# Project Showcase
 
 <div align="center" style="padding: 24px; border-radius: 16px; background: rgba(255,255,255,0.03); backdrop-filter: blur(10px); border:1px solid rgba(255,255,255,0.05); max-width: 900px; margin:auto; text-align:left;">
 
