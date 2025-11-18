@@ -1,68 +1,112 @@
-# 👋 Hi, I’m Mustafa
-
-### 🚀 Software & Mobile Application Developer  
-Passionate about building high-quality **Android/iOS apps**, **web applications**, and exploring **DevOps, Git/GitHub, and DSA**.
-
----
-
-## 🧑‍💻 About Me  
-- 🎓 **IT Student** specializing in Software & Mobile App Development at MIT ADT University, Pune  
-- 💼 Working on real-world projects with **ReactJS**, **React Native**, **Java**, **Hibernate**, **Servlet/JSP**, and **Unity (AR/VR)**  
-- 🌱 Currently learning **DevOps**, **Cloud Computing**, **Information Security**, and improving my DSA skills  
-- 🔥 Focused on clean UI/UX, scalable architecture, and high performance  
+<div align="center" style="backdrop-filter: blur(12px); background: rgba(255,255,255,0.04); padding: 40px 20px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); max-width: 900px; margin: auto;">
+  <h1 style="font-weight:700; letter-spacing:-1px;">Mustafa Bhewala</h1>
+  <p style="font-size:16px; color: #cfcfcf;">Full-Stack Developer • React • Node.js • Automation • AI</p>
+</div>
 
 ---
 
-## 🛠 Tech Stack  
-### **Languages**  
-Java • JavaScript • Python • C • SQL  
+# Minimal Ultra-Modern Profile
 
-### **Frontend**  
-ReactJS • HTML • CSS • Tailwind • JavaScript (ES6+)  
+Clean. Professional. Aesthetic.
 
-### **Mobile Development**  
-React Native • Expo CLI • Android & iOS development  
+## About Me
 
-### **Backend & Frameworks**  
-Node.js • Express.js • Hibernate • Servlet • JSP  
-
-### **Databases**  
-MongoDB • MySQL • Firebase  
-
-### **DevOps, Tools & Cloud**  
-Git • GitHub • Docker • AWS (basics) • CI/CD pipelines  
-
-### **Other Skills**  
-Unity (AR/VR) • Postman • Figma • VS Code • IntelliJ IDEA  
+I build fast, modern, scalable applications across web, mobile, automation, and AI systems.
+Currently working with full-stack JavaScript, automation pipelines, ERP systems, and production-grade SaaS products.
 
 ---
 
-## 🔥 Featured Projects  
-### **📱 Personal Finance Tracker (ReactJS + React Native)**  
-A modern cross-platform app that tracks expenses, shows charts, has navigation & a simple login system.
+# Tech Stack (Custom SVG Icons)
 
-### **🚗 Vehicle Service Management (Hibernate Mini Project)**  
-A Hibernate-based CRUD system for managing vehicle servicing and maintenance workflows.
+<div align="left">
 
-### **📘 Information Security Practical File (Cryptography Lab)**  
-Implementation of classic & modern ciphers: Caesar, Monoalphabetic, Polyalphabetic, AES, DES, RSA, Diffie-Hellman.
+### Frontend
 
-### **🛒 AR Furniture App (Unity + ARCore)**  
-Augmented-reality application where users can place 3D furniture in real space before purchasing.
+<img src="https://cdn.simpleicons.org/react/61dafb" height="32"/>  
+<img src="https://cdn.simpleicons.org/nextdotjs/ffffff" height="32"/>  
+<img src="https://cdn.simpleicons.org/flutter/56c6f7" height="32"/>  
+<img src="https://cdn.simpleicons.org/tailwindcss/38bdf8" height="32"/>  
+
+### Backend
+
+<img src="https://cdn.simpleicons.org/nodedotjs/7cb700" height="32"/>  
+<img src="https://cdn.simpleicons.org/express/ffffff" height="32"/>  
+<img src="https://cdn.simpleicons.org/mongodb/4db33d" height="32"/>  
+<img src="https://cdn.simpleicons.org/postgresql/316192" height="32"/>
+
+### Tools & DevOps
+
+<img src="https://cdn.simpleicons.org/docker/2496ed" height="32"/>  
+<img src="https://cdn.simpleicons.org/githubactions/2088ff" height="32"/>  
+<img src="https://cdn.simpleicons.org/vercel/ffffff" height="32"/>  
+<img src="https://cdn.simpleicons.org/netlify/00c7b7" height="32"/>
+
+### Languages
+
+<img src="https://cdn.simpleicons.org/javascript/f7df1e" height="32"/>  
+<img src="https://cdn.simpleicons.org/typescript/3178c6" height="32"/>  
+<img src="https://cdn.simpleicons.org/python/3776ab" height="32"/>  
+<img src="https://cdn.simpleicons.org/c/ffffff" height="32"/>
+
+</div>
 
 ---
 
-## 📊 GitHub Stats  
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MustafaBhewala&show_icons=true&theme=radical)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MustafaBhewala&layout=compact&theme=radical)  
+# Project Showcase
+
+<div align="center" style="backdrop-filter: blur(14px); background: rgba(255,255,255,0.03); padding: 25px; border-radius: 16px; border:1px solid rgba(255,255,255,0.05); max-width: 900px; margin:auto;">
+
+## AI Test Case Generator
+
+Modern automated test-case generation system with GitHub OAuth + auto PR workflow.
+**Tech:** React 19, Node.js, OAuth, CI/CD
+
+## SafePlast ERP System
+
+Full ERP with designer, CRM, quotation engine, inventory workflows.
+**Tech:** React, Node.js, MongoDB
+
+## CrozenKnots Commerce
+
+Production e-commerce with payments, analytics & admin dashboards.
+**Tech:** React, Node, Razorpay
+
+## Attendify (AI Proctoring)
+
+Real-time behavioral tracking using OpenCV + ML.
+**Award:** Best Idea Of The Year – IdeaSpark
+
+</div>
 
 ---
 
-## 🤝 Connect With Me  
-- 💼 LinkedIn: ![Linkedin Profile](https://www.linkedin.com/in/mustafabhewala)
-- 📧 Email: bhewala.mustafa.25@gmail.com  
-- 📱 Website/Portfolio: ![Portfolio](https://www.mustafabhewala.tech/)
+# Portfolio + GitHub Profile Style Layout
+
+## Quick Overview
+
+* Full-Stack Developer (Web + Mobile)
+* AI & automation project experience
+* Worked with clients & production systems
+* Skilled in CI/CD, cloud & deployments
+
+## GitHub Insights
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=MustafaBhewala&show_icons=true&theme=transparent" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MustafaBhewala&layout=compact&theme=transparent" height="150"/>
+</div>
 
 ---
 
-### ✨ “Code. Create. Improve. Repeat.”  
+# Contact
+
+**Portfolio:** mustafabhewala.tech
+**LinkedIn:** linkedin.com/in/mustafa-bhewala-265b55258
+**Email:** [bhewala.mustafa.25@gmail.com](mailto:bhewala.mustafa.25@gmail.com)
+**GitHub:** github.com/MustafaBhewala
+
+---
+
+# Tagline
+
+Clean Code. Clear Purpose. Modern Execution.
