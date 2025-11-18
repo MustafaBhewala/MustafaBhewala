@@ -117,10 +117,10 @@ AI-based proctoring platform with:
 
 # Contact
 
-**Portfolio:** mustafabhewala.tech
-**LinkedIn:** linkedin.com/in/mustafa-bhewala-265b55258
-**Email:** [bhewala.mustafa.25@gmail.com](mailto:bhewala.mustafa.25@gmail.com)
-**GitHub:** github.com/MustafaBhewala
+**Portfolio:** mustafabhewala.tech <br />
+**LinkedIn:** linkedin.com/in/mustafa-bhewala-265b55258 <br />
+**Email:** [bhewala.mustafa.25@gmail.com](mailto:bhewala.mustafa.25@gmail.com) <br />
+**GitHub:** github.com/MustafaBhewala <br />
 
 ---
 
