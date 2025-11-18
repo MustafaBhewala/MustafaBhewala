@@ -59,9 +59,9 @@ Augmented-reality application where users can place 3D furniture in real space b
 ---
 
 ## 🤝 Connect With Me  
-- 💼 LinkedIn: [**your LinkedIn URL**]  
-- 📧 Email: **your email here**  
-- 📱 Website/Portfolio: **coming soon**  
+- 💼 LinkedIn: ![Linkedin Profile](https://www.linkedin.com/in/mustafabhewala)
+- 📧 Email: bhewala.mustafa.25@gmail.com  
+- 📱 Website/Portfolio: ![Portfolio](https://www.mustafabhewala.tech/)
 
 ---
 
