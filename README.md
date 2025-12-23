@@ -18,7 +18,7 @@ My strengths lie in **system design**, **clean architecture**, and building **fa
 
 ---
 
-# Skills & Technologies (With SVG Icons)
+# Skills & Technologies
 
 <div align="left">
 
