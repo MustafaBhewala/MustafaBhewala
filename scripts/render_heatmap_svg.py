@@ -22,13 +22,11 @@ def level_for_count(count: int, max_count: int) -> int:
     from datetime import datetime, timedelta
     from pathlib import Path
 
-
-    PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
-
+    PALETTE = ["#161b22", "#0e4429", "#006d32",
+               "#26a641", "#39d353", "#69f0a0"]
 
     def parse_payload(path: Path) -> dict[str, object]:
         return json.loads(path.read_text(encoding="utf-8"))
-
 
     def build_grid(days: list[dict[str, object]]) -> list[dict[str, object]]:
         day_map = {
@@ -54,7 +52,6 @@ def level_for_count(count: int, max_count: int) -> int:
                     }
                 )
         return cells
-
 
     def build_svg(payload: dict[str, object]) -> str:
         days = list(payload["days"])
@@ -84,9 +81,11 @@ def level_for_count(count: int, max_count: int) -> int:
 
         legend_x = 46
         for index, color in enumerate(PALETTE):
-            parts.append(f'<rect x="{legend_x + index * 18}" y="38" width="12" height="12" rx="3" fill="{color}" />')
+            parts.append(
+                f'<rect x="{legend_x + index * 18}" y="38" width="12" height="12" rx="3" fill="{color}" />')
 
-        parts.append(f'<text x="24" y="209" class="footer">{total:,} contributions in the last year</text>')
+        parts.append(
+            f'<text x="24" y="209" class="footer">{total:,} contributions in the last year</text>')
 
         for cell in cells:
             x = 24 + int(cell["week"]) * (cell_size + gap)
@@ -100,16 +99,17 @@ def level_for_count(count: int, max_count: int) -> int:
         parts.append("</svg>")
         return "".join(parts)
 
-
     def main() -> None:
-        parser = argparse.ArgumentParser(description="Render the contribution heatmap SVG.")
-        parser.add_argument("--input", type=Path, default=Path("data/contributions.json"), help="Input JSON path")
-        parser.add_argument("--output", type=Path, default=Path("contrib-heatmap.svg"), help="Output SVG path")
+        parser = argparse.ArgumentParser(
+            description="Render the contribution heatmap SVG.")
+        parser.add_argument(
+            "--input", type=Path, default=Path("data/contributions.json"), help="Input JSON path")
+        parser.add_argument(
+            "--output", type=Path, default=Path("contrib-heatmap.svg"), help="Output SVG path")
         args = parser.parse_args()
 
         payload = parse_payload(args.input)
         args.output.write_text(build_svg(payload), encoding="utf-8")
-
 
     if __name__ == "__main__":
         main()

@@ -103,9 +103,12 @@ def build_payload(days: list[dict[str, object]]) -> dict[str, object]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Fetch public GitHub contribution data.")
-    parser.add_argument("--username", default=os.environ.get("GITHUB_REPOSITORY_OWNER", "MustafaBhewala"), help="GitHub username")
-    parser.add_argument("--output", type=Path, default=Path("data/contributions.json"), help="Output JSON path")
+    parser = argparse.ArgumentParser(
+        description="Fetch public GitHub contribution data.")
+    parser.add_argument("--username", default=os.environ.get(
+        "GITHUB_REPOSITORY_OWNER", "MustafaBhewala"), help="GitHub username")
+    parser.add_argument("--output", type=Path,
+                        default=Path("data/contributions.json"), help="Output JSON path")
     args = parser.parse_args()
 
     url = f"https://github.com/users/{args.username}/contributions"
@@ -117,7 +120,8 @@ def main() -> None:
     payload["source"] = url
     payload["username"] = args.username
 
-    summary_match = re.search(r'js-contribution-activity-description[^>]*>\s*(\d+)\s+contributions', response.text)
+    summary_match = re.search(
+        r'js-contribution-activity-description[^>]*>\s*(\d+)\s+contributions', response.text)
     if summary_match:
         payload["total"] = int(summary_match.group(1))
 

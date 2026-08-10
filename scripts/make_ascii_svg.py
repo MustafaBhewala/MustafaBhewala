@@ -50,7 +50,8 @@ def brightness_to_glyph(value: int) -> str:
 
 def load_cells(image_path: Path, width: int) -> list[str]:
     if image_path.suffix.lower() == ".svg":
-        raise ValueError("SVG input is handled by build_svg_wrapper and should not reach raster loading.")
+        raise ValueError(
+            "SVG input is handled by build_svg_wrapper and should not reach raster loading.")
 
     image = Image.open(image_path).convert("L")
     aspect_ratio = image.height / image.width
@@ -59,7 +60,8 @@ def load_cells(image_path: Path, width: int) -> list[str]:
 
     rows: list[str] = []
     for y in range(height):
-        rows.append("".join(brightness_to_glyph(resized.getpixel((x, y))) for x in range(width)))
+        rows.append("".join(brightness_to_glyph(resized.getpixel((x, y)))
+                    for x in range(width)))
     return rows
 
 
@@ -95,7 +97,8 @@ def build_svg(rows: list[str], font_size: int = 11) -> str:
         begin = f"{index * 0.045:.3f}s"
         cursor_width = 4
         parts.append(f'<g clip-path="url(#row-{index})">')
-        parts.append(f'<text x="0" y="{y:.2f}" xml:space="preserve">{row}</text>')
+        parts.append(
+            f'<text x="0" y="{y:.2f}" xml:space="preserve">{row}</text>')
         parts.append(
             f'<rect x="0" y="{y + 1:.2f}" width="{cursor_width}" height="{font_size + 1}" fill="#d7d7d7">'
             f'<animate attributeName="x" from="0" to="{max(0, svg_width - cursor_width)}" begin="{begin}" dur="0.75s" fill="freeze" />'
@@ -108,10 +111,14 @@ def build_svg(rows: list[str], font_size: int = 11) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Convert a prepped portrait into an ASCII SVG.")
-    parser.add_argument("--input", type=Path, default=Path("source-prepped.png"), help="Input prepped image")
-    parser.add_argument("--output", type=Path, default=Path("avi-ascii.svg"), help="Output SVG path")
-    parser.add_argument("--width", type=int, default=88, help="Character grid width")
+    parser = argparse.ArgumentParser(
+        description="Convert a prepped portrait into an ASCII SVG.")
+    parser.add_argument(
+        "--input", type=Path, default=Path("source-prepped.png"), help="Input prepped image")
+    parser.add_argument("--output", type=Path,
+                        default=Path("avi-ascii.svg"), help="Output SVG path")
+    parser.add_argument("--width", type=int, default=88,
+                        help="Character grid width")
     args = parser.parse_args()
 
     if args.input.suffix.lower() == ".svg":
