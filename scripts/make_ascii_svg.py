@@ -37,9 +37,6 @@ def build_svg_wrapper(svg_path: Path) -> str:
         f'<image href="{href}" x="0" y="0" width="{numeric_width}" height="{numeric_height}" preserveAspectRatio="xMidYMid meet" mask="url(#reveal)" style="filter: brightness(0) invert(1);">'
         f'<animate attributeName="opacity" values="0;1" begin="0s" dur="0.25s" fill="freeze" />'
         f'</image>'
-        f'<rect x="0" y="0" width="4" height="{numeric_height}" fill="#ffffff" opacity="0.55">'
-        f'<animate attributeName="x" from="0" to="{max(float(numeric_width) - 4.0, 0.0)}" begin="0s" dur="1.8s" fill="freeze" />'
-        f'</rect>'
         f'</svg>'
     )
 

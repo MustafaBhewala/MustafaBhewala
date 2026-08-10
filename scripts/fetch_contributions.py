@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -20,13 +21,12 @@ def parse_days(html: str) -> list[dict[str, object]]:
         date_text = cell.get("data-date")
         if not date_text:
             continue
-        count_text = cell.get("data-count", "0")
         level_text = cell.get("data-level", "0")
         days.append(
             {
                 "date": date_text,
-                "count": int(count_text),
                 "level": int(level_text),
+                "count": int(level_text),
             }
         )
 
@@ -116,6 +116,10 @@ def main() -> None:
     payload = build_payload(days)
     payload["source"] = url
     payload["username"] = args.username
+
+    summary_match = re.search(r'js-contribution-activity-description[^>]*>\s*(\d+)\s+contributions', response.text)
+    if summary_match:
+        payload["total"] = int(summary_match.group(1))
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, indent=2), encoding="utf-8")
