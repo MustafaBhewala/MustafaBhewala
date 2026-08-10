@@ -48,51 +48,68 @@ JavaScript • TypeScript • Python • Dart • C/C++ <br/> <img src="https://
 
 # Project Showcase
 
-<div align="center" style="padding: 24px; border-radius: 16px; background: rgba(255,255,255,0.03); backdrop-filter: blur(10px); border:1px solid rgba(255,255,255,0.05); max-width: 900px; margin:auto; text-align:left;">
+## AIVOA — AI-Powered Customer Complaint Management System
+
+An AI-assisted pharmaceutical QMS module designed to simplify customer complaint logging, editing, document extraction, and risk assessment.
+
+- Natural-language complaint logging and editing
+- PDF, DOCX, TXT, and EML document extraction
+- Shared LangGraph pipeline for extraction and risk assessment
+- Human-in-the-loop workflow — AI never writes directly to the database
+- Field-level change highlighting and duplicate batch detection
+- Tech: React, Redux Toolkit, FastAPI, Python, LangGraph, Groq, Gemma 2, MySQL
+
+GitHub: https://github.com/MustafaBhewala/aivoa-complaint-management-system
+
+Status: Technical Assessment — Not deployed
+
 
 ## AI Test Case Generator — 2025
 
-Live: [https://workik-task.vercel.app](https://workik-task.vercel.app)
+Live: https://ai-testcase-gen.vercel.app
 
-An AI-powered platform that generates intelligent test cases using **Google Gemini**, integrated with **GitHub OAuth** for automatic pull requests.
+An AI-powered developer tool that analyzes code from GitHub repositories and generates test cases using Google Gemini, with automated pull-request creation.
 
-* Detects project test frameworks automatically
-* Built with React 19, Node.js, OAuth
-* Deployed using Vercel + CI/CD pipelines
+- GitHub OAuth authentication and repository browsing
+- Context-aware test generation based on source-code analysis
+- Supports Jest, pytest, JUnit, NUnit, and other testing frameworks
+- Multi-file processing and framework detection
+- Automatically creates pull requests with generated test files
+- Tech: React 19, TypeScript, Node.js, Google Gemini, GitHub OAuth, Vercel
 
-## SafePlast ERP — Production ERP for uPVC Manufacturing
+GitHub: https://github.com/MustafaBhewala/test-case-generator-workik.git
 
-Live: [https://safeplast.netlify.app](https://safeplast.netlify.app)
 
-End-to-end ERP system with:
+## CrozenKnots — Production E-Commerce Platform
 
-* CRM module
-* Automated quotation engine
-* CAD-like uPVC window designer
-* Inventory & workflow tracking
-  Tech: React, Node.js, MongoDB, JWT Auth
+Live: https://crozenknots.in
 
-## CrozenKnots.in — Live E-Commerce Platform
+A full-stack e-commerce platform built for a real client, covering the complete product, order, and payment workflow.
 
-Live: [https://crozenknots.in](https://crozenknots.in)
+- Customer-facing e-commerce experience
+- Product and inventory management
+- Order management workflow
+- Razorpay payment integration
+- Full frontend, backend, and API development
+- Tech: React, Node.js, MongoDB, Razorpay
 
-A fully functional e-commerce solution serving **real customers**, with:
+GitHub: Private repository
 
-* Razorpay payments
-* Admin analytics dashboard
-* Inventory, orders & product workflow
-  Tech: React, Node.js, MongoDB
 
-## Attendify — AI Online Proctoring (Award Winning)
+## Sweet Shop Management System — TDD Engineering Challenge
 
-AI-based proctoring platform with:
+Live: https://sweetshop25.vercel.app
 
-* OpenCV face detection
-* Real-time behaviour tracking
-* Academic integrity scoring
-  Award: **Best Idea of the Year — IdeaSpark 2024**
+A full-stack management system built as a technical assessment, with a focus on TDD, authentication, API design, inventory management, and maintainable architecture.
 
-</div>
+- JWT authentication with role-based access control
+- Product CRUD and inventory management
+- Search, filtering, purchasing, and restocking workflows
+- 33 passing Jest tests with 70%+ test coverage
+- Responsive frontend and deployed full-stack architecture
+- Tech: React, TypeScript, Zustand, Tailwind CSS, Node.js, Express, MongoDB
+
+GitHub: https://github.com/MustafaBhewala/sweet-shop-management.git
 
 ---
 
