@@ -21,12 +21,15 @@ def parse_days(html: str) -> list[dict[str, object]]:
         date_text = cell.get("data-date")
         if not date_text:
             continue
-        level_text = cell.get("data-level", "0")
+        cell_id = cell.get("id")
+        tooltip = soup.find("tool-tip", attrs={"for": cell_id}) if cell_id else None
+        tooltip_text = " ".join(tooltip.get_text(" ", strip=True).split()) if tooltip else ""
+        count_match = re.search(r"^(?:(\d+) contributions?|No contributions) on ", tooltip_text)
+        count = int(count_match.group(1)) if count_match and count_match.group(1) else 0
         days.append(
             {
                 "date": date_text,
-                "level": int(level_text),
-                "count": int(level_text),
+                "count": count,
             }
         )
 
@@ -103,12 +106,9 @@ def build_payload(days: list[dict[str, object]]) -> dict[str, object]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Fetch public GitHub contribution data.")
-    parser.add_argument("--username", default=os.environ.get(
-        "GITHUB_REPOSITORY_OWNER", "MustafaBhewala"), help="GitHub username")
-    parser.add_argument("--output", type=Path,
-                        default=Path("data/contributions.json"), help="Output JSON path")
+    parser = argparse.ArgumentParser(description="Fetch public GitHub contribution data.")
+    parser.add_argument("--username", default=os.environ.get("GITHUB_REPOSITORY_OWNER", "MustafaBhewala"), help="GitHub username")
+    parser.add_argument("--output", type=Path, default=Path("data/contributions.json"), help="Output JSON path")
     args = parser.parse_args()
 
     url = f"https://github.com/users/{args.username}/contributions"
@@ -120,8 +120,7 @@ def main() -> None:
     payload["source"] = url
     payload["username"] = args.username
 
-    summary_match = re.search(
-        r'js-contribution-activity-description[^>]*>\s*(\d+)\s+contributions', response.text)
+    summary_match = re.search(r'js-contribution-activity-description[^>]*>\s*(\d+)\s+contributions', response.text)
     if summary_match:
         payload["total"] = int(summary_match.group(1))
 
