@@ -54,13 +54,17 @@ def build_svg(static: bool) -> str:
     lines.append('<circle cx="24" cy="19" r="5" fill="#ff5f56" />')
     lines.append('<circle cx="42" cy="19" r="5" fill="#ffbd2e" />')
     lines.append('<circle cx="60" cy="19" r="5" fill="#27c93f" />')
-    lines.append('<text x="20" y="72" class="chrome" font-size="18">neofetch</text>')
-    lines.append('<text x="20" y="90" class="chrome" font-size="11">bhewala.mustafa.25@gmail.com</text>')
+    lines.append(
+        '<text x="20" y="72" class="chrome" font-size="18">neofetch</text>')
+    lines.append(
+        '<text x="20" y="90" class="chrome" font-size="11">bhewala.mustafa.25@gmail.com</text>')
 
     for index, ((label, value), y) in enumerate(zip(ROWS, row_y), start=1):
         lines.append(f'<g class="line line-{index}">')
-        lines.append(f'<text x="20" y="{y}" class="label" font-size="16">{label}</text>')
-        lines.append(f'<text x="110" y="{y}" class="value" font-size="16">{value}</text>')
+        lines.append(
+            f'<text x="20" y="{y}" class="label" font-size="16">{label}</text>')
+        lines.append(
+            f'<text x="110" y="{y}" class="value" font-size="16">{value}</text>')
         lines.append('</g>')
 
     lines.append('</svg>')
