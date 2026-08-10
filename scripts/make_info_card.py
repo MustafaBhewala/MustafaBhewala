@@ -42,21 +42,29 @@ def build_svg(static: bool) -> str:
         styles.append("  .line { opacity: 1; transform: translateX(0); }")
     styles.append("</style>")
 
-    lines.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">')
+    lines.append(
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">')
     lines.append("".join(styles))
-    lines.append(f'<rect class="panel" x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="18" />')
-    lines.append('<rect class="titlebar" x="0.5" y="0.5" width="489" height="38" rx="18" />')
-    lines.append('<rect class="titlebar" x="0.5" y="20" width="489" height="18" />')
+    lines.append(
+        f'<rect class="panel" x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="18" />')
+    lines.append(
+        '<rect class="titlebar" x="0.5" y="0.5" width="489" height="38" rx="18" />')
+    lines.append(
+        '<rect class="titlebar" x="0.5" y="20" width="489" height="18" />')
     lines.append('<circle cx="24" cy="19" r="5" fill="#ff5f56" />')
     lines.append('<circle cx="42" cy="19" r="5" fill="#ffbd2e" />')
     lines.append('<circle cx="60" cy="19" r="5" fill="#27c93f" />')
-    lines.append('<text x="20" y="72" class="chrome" font-size="18">neofetch</text>')
-    lines.append('<text x="20" y="92" class="chrome" font-size="11">MustafaBhewala@github</text>')
+    lines.append(
+        '<text x="20" y="72" class="chrome" font-size="18">neofetch</text>')
+    lines.append(
+        '<text x="20" y="92" class="chrome" font-size="11">MustafaBhewala@github</text>')
 
     for index, ((label, value), y) in enumerate(zip(ROWS, row_y), start=1):
         lines.append(f'<g class="line line-{index}">')
-        lines.append(f'<text x="20" y="{y}" class="label" font-size="16">{label}</text>')
-        lines.append(f'<text x="110" y="{y}" class="value" font-size="16">{value}</text>')
+        lines.append(
+            f'<text x="20" y="{y}" class="label" font-size="16">{label}</text>')
+        lines.append(
+            f'<text x="110" y="{y}" class="value" font-size="16">{value}</text>')
         lines.append('</g>')
 
     lines.append('</svg>')
@@ -64,8 +72,10 @@ def build_svg(static: bool) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Create the profile info card SVG.")
-    parser.add_argument("--output", type=Path, default=Path("info-card.svg"), help="Output SVG path")
+    parser = argparse.ArgumentParser(
+        description="Create the profile info card SVG.")
+    parser.add_argument("--output", type=Path,
+                        default=Path("info-card.svg"), help="Output SVG path")
     args = parser.parse_args()
 
     static = os.environ.get("STATIC") == "1"
