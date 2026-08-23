@@ -1,35 +1,7 @@
 {
   "source": "https://github.com/users/MustafaBhewala/contributions",
-  "total": 360,
+  "total": 361,
   "days": [
-    {
-      "date": "2025-08-17",
-      "count": 0
-    },
-    {
-      "date": "2025-08-18",
-      "count": 1
-    },
-    {
-      "date": "2025-08-19",
-      "count": 3
-    },
-    {
-      "date": "2025-08-20",
-      "count": 1
-    },
-    {
-      "date": "2025-08-21",
-      "count": 0
-    },
-    {
-      "date": "2025-08-22",
-      "count": 3
-    },
-    {
-      "date": "2025-08-23",
-      "count": 4
-    },
     {
       "date": "2025-08-24",
       "count": 0
@@ -1484,12 +1456,16 @@
     },
     {
       "date": "2026-08-22",
+      "count": 1
+    },
+    {
+      "date": "2026-08-23",
       "count": 0
     }
   ],
   "streaks": {
     "current": 0,
-    "longest": 12
+    "longest": 13
   },
   "best_day": {
     "date": "2025-12-13",
@@ -1498,7 +1474,7 @@
   "monthly_totals": [
     {
       "month": "2025-08",
-      "count": 44
+      "count": 32
     },
     {
       "month": "2025-09",
@@ -1546,9 +1522,9 @@
     },
     {
       "month": "2026-08",
-      "count": 59
+      "count": 60
     }
   ],
-  "updated_at": "2026-08-22T06:59:48Z",
+  "updated_at": "2026-08-23T07:01:16Z",
   "username": "MustafaBhewala"
 }
